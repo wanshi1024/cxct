@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        .container {
+            width: 1030px;
+            margin: 0 auto;
+            border: 1px #ddd solid;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .container>* {
+            margin-bottom: 5px;
+        }
+
+        .wrap {
+            width: 974px;
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部 -->
+        <header id="header"></header>
+        <!-- 导航 -->
+        <nav id="nav"></nav>
+        <div class="wrap">
+            <!-- 轮播 -->
+            <div id="carousel" style=" height: 460px;"></div>
+            <!-- 热销产品 -->
+            <div id="hot-product"></div>
+            <!-- 行业链接 -->
+            <div id="trade-link"></div>
+            <div id="footer"></div>
+        </div>
+
+    </div>
+
+    <script src="./lib/jquery-3.3.1.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/Carousel.js"></script>
+    <script src="./js/hotProduct.js"></script>
+    <script src="./js/tradeLink.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        $(function () {
+            header({
+                containerId: '#header',
+                logoURL: './img/logo2.jpg',
+                indexURL: '#',
+                title1: '20年 专 注 于 室 内 环 境，零 增 项 的 空 调 系 统',
+                title2: '向顾客提供省心，放心，舒心的建筑环境体系化配套服务',
+                tel1: '13810704395',
+                tel2: '010--63256708'
+            })
+            nav({
+                containerId: '#nav',
+                navArr: [
+                    {
+                        text: '首 页',
+                        url: '#'
+                    },
+                    {
+                        text: '关于我们',
+                        url: '#'
+                    },
+                    {
+                        text: '商用中央空调',
+                        url: '#'
+                    },
+                    {
+                        text: '家用中央空调',
+                        url: '#'
+                    },
+                    {
+                        text: '民用场所案例',
+                        url: '#'
+                    },
+                    {
+                        text: '商业场所案例',
+                        url: '#'
+                    }, {
+                        text: '工业场所案例',
+                        url: '#'
+                    },
+                    {
+                        text: '质量保障措施',
+                        url: '#'
+                    },
+                    {
+                        text: '联系我们',
+                        url: '#'
+                    },
+                ]
+            })
+
+            $('#carousel').Carousel({
+                imgArr: [
+                    'https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=77d1cd475d43fbf2da2ca023807fca1e/9825bc315c6034a8ef5250cec5134954082376c9.jpg',
+                    'https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=b5e4c905865494ee982209191df4e0e1/c2cec3fdfc03924590b2a9b58d94a4c27d1e2500.jpg',
+                    'https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=0c78105b888ba61ec0eece2f713597cc/0e2442a7d933c8956c0e8eeadb1373f08202002a.jpg',
+                    'https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=92afee66fd36afc3110c39658318eb85/908fa0ec08fa513db777cf78376d55fbb3fbd9b3.jpg',
+                    'https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=a62e824376d98d1069d40a31113eb807/838ba61ea8d3fd1fc9c7b6853a4e251f94ca5f46.jpg'
+                ],
+                switchSpeed: 5000,
+                switchTime: 800
+            })
+
+            hotProduct({
+                containerId: '#hot-product',
+                dataArr: [
+                    {
+                        imgSrc: './img/01.webp',
+                        title: '热销商品哈哈哈哈哈哈 gggggg上上下下',
+                        synopsis: '嘻嘻嘻嘻嘻嘻嘻嘻寻寻嘻嘻嘻嘻嘻嘻嘻嘻寻寻嘻嘻嘻嘻嘻嘻嘻嘻寻寻嘻嘻嘻嘻嘻嘻嘻嘻寻寻',
+                        url: '#1'
+                    },
+                    {
+                        imgSrc: './img/02.webp',
+                        title: '热销商品 2',
+                        synopsis: '嘻嘻嘻嘻嘻嘻嘻嘻寻寻',
+                        url: '#2'
+                    }, {
+                        imgSrc: './img/03.webp',
+                        title: '热销商品 3',
+                        synopsis: '嘻嘻嘻嘻嘻嘻嘻嘻寻寻',
+                        url: '#3'
+                    },
+                    {
+                        imgSrc: './img/04.webp',
+                        title: '热销商品 4',
+                        synopsis: '嘻嘻嘻嘻嘻嘻嘻嘻寻寻',
+                        url: '#4'
+                    }
+                ],
+                moreUrl: '#'
+            })
+            tradeLink({
+				title3:'行业链接',
+                containerId:'#trade-link',
+                navArr:[
+                    {
+                        text:'行业链接1',
+                        url:'#'
+                    },
+                    {
+                        text:'行业链接2',
+                        url:'#'
+                    },
+                    {
+                        text:'行业链接3',
+                        url:'#'
+                    },
+                    {
+                        text:'行业链接4',
+                        url:'#'
+                    },{
+                        text:'行业链接5',
+                        url:'#'
+                    },
+                    {
+                        text:'行业链接6',
+                        url:'#'
+                    },
+                    {
+                        text:'联系我们',
+                        url:'#'
+                    },
+                ]
+            })
+			copyright({
+                containerId: '#footer',
+                logoURL: 'img/logo1.jpg',
+                indexURL: '#',
+                title1: 'Copyright @ 2015-2018 北京建筑环艺能源科技有限公司 版权所有 Power by MeiDe',
+                addr: '地址：北京市某某区某某路123456号',
+                tel:'电话：010--63256708',
+            })
+        })
+
+    </script>
+</body>
+
+</html>

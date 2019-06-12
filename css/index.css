@@ -1,0 +1,20 @@
+
+/* 关于我们 */
+.about-our {
+    height: 200px;
+    background-color: rgba(230, 230, 230, .5);
+   display: flex;
+   justify-content:center;
+   flex-direction: column;
+}
+
+.about-our p {
+    width: 873px;
+    line-height: 2em;
+    color: #505050;
+    text-align: left;
+    margin: 2px auto;
+}
+.about-our p:last-child{
+    text-indent: 2em;
+}

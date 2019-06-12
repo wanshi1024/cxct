@@ -1,0 +1,148 @@
+
+@keyframes move{
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(-1200px)
+    }
+}
+#scroll-img{
+    overflow: hidden;
+    div{
+        width: 200%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        animation-name: move;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        img{
+           width: 1200px;
+           height: 150px;
+        }
+    }
+}
+
+/* 为什么选择环艺 */
+.why-choose {
+    padding: 25px 0;
+
+    .title {
+        height: 74px;
+        display: flex;
+        justify-content: space-between;
+
+        &>div {
+            width: 300px;
+            height: 10px;
+            background: #999999;
+
+            &:last-child {
+                align-self: flex-end;
+            }
+        }
+
+        h1 {
+            color: #505050;
+            font-size: 50px;
+            font-weight: normal;
+        }
+
+        span {
+            font-size: 20px;
+            width: 173px;
+            height: 48px;
+            background: #2ff8f8;
+            color: white;
+            align-self: flex-end;
+            line-height: 48px;
+            text-align: center;
+        }
+    }
+
+    .box {
+        margin-top: 38px;
+        padding: 0 14px;
+        height: 210px;
+        display: flex;
+
+        justify-content: space-between;
+        // background: #ddd;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 534;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+
+                .num {
+                    width: 78px;
+                    height: 48px;
+                    color: rgba(255, 255, 255, 1);
+                    font-size: 25px;
+                    background-color: rgba(255, 87, 51, 1);
+                    line-height: 48px;
+                    text-align: center;
+                }
+
+                h2 {
+                    border-top: 7px rgba(255, 87, 51, 1) solid;
+                    width: 456px;
+                    color: rgba(212, 48, 48, 1);
+                    font-size: 25px;
+                    text-indent: 25px;
+                    padding-top: 10px;
+                    box-sizing: border-box;
+                }
+            }
+
+            p {
+
+                width: 456px;
+                height: 145px;
+                color: rgba(80, 80, 80, 1);
+                font-size: 14px;
+                line-height: 200%;
+                align-self: flex-end;
+                text-indent: 2em;
+            }
+        }
+
+        .img {
+            img {
+                width: 450px;
+                height: 210px;
+            }
+        }
+    }
+
+}
+
+
+
+/* 关于我们 */
+.about-our {
+    height: 200px;
+    background-color: rgba(230, 230, 230, .5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-our p {
+    width: 873px;
+    line-height: 2em;
+    color: #505050;
+    text-align: left;
+    margin: 2px auto;
+}
+
+.about-our p:last-child {
+    text-indent: 2em;
+}

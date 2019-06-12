@@ -13,4 +13,15 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px #ddd solid; */
+    padding: 0 2px;
+    border-top: none;
+    border-bottom: none;
+}
 
+.container>* {
+    margin-bottom: 5px;
+}

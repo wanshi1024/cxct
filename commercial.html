@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商用中央空调</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/commercial.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部 -->
+        <header id="header"></header>
+        <!-- 导航 -->
+        <nav id="nav"></nav>
+        <!-- 轮播 -->
+        <div id="carousel" style=" height: 240px;"></div>
+
+        <main>
+            <div class="title">
+                商用中央空调
+            </div>
+            <div class="content">
+                <a class="box" href="index.html">
+                    <img src="./img/图片 7.jpg" alt="">
+                    <div class="text">R134a满液式水冷螺杆</div>
+                </a>
+                <a class="box">
+                    <img src="./img/图片 7.jpg" alt="">
+                    <div class="text">R134a满液式水冷螺杆</div>
+                </a>
+                <a class="box">
+                    <img src="./img/图片 7.jpg" alt="">
+                    <div class="text">R134a满液式水冷螺杆</div>
+                </a>
+                <a class="box">
+                    <img src="./img/图片 7.jpg" alt="">
+                    <div class="text">R134a满液式水冷螺杆</div>
+                </a>
+            </div>
+            <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+            <script type="text/javascript" src="./lib/vue.min.js"></script>
+            <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+            <div id="paging">
+                <Page :total="100" show-total show-elevator @on-change="change" />
+            </div>
+            <script>
+                new Vue({
+                    el: '#paging',
+                    data() {
+                        return {
+                            currentIndex: 1
+                        }
+                    },
+                    methods: {
+                        // 页码改变
+                        change(e) {
+                            console.log(e);
+
+                        }
+                    }
+                })
+
+            </script>
+        </main>
+
+
+
+        <!-- 行业链接 -->
+        <div id="trade-link"></div>
+        <!-- 底部 -->
+        <div id="footer"></div>
+    </div>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

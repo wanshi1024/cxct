@@ -27,7 +27,7 @@ function nav(params) {
     $this.children('ul').css({
         display: 'flex',
         'justify-content': 'space-between',
-        padding: '4px 0',
+        padding: '8px 0',
         'border-bottom': '2px rgba(60, 196, 252, 1) solid'
     }).children('li').css({
         transition: 'transform 200ms'
@@ -45,8 +45,8 @@ function nav(params) {
     ).children('a').css({
         'text-decoration': 'none',
         color: 'rgba(80, 80, 80, 1)',
-        'font-size': '1.1em',
-        'line-height': '2em',
+        'font-size': '16px',
+        'line-height': '16px',
         padding: '10px 10px',
     })
 
@@ -64,7 +64,9 @@ function nav(params) {
             color: 'rgba(80, 80, 80, 1)'
         })
     }
-    var currentIndex = 0;
+    var currentIndex = sessionStorage.getItem('navIndex') | 0;
+console.log(location);
+
     function clickNav() {
         $this.find('li').each(function (index, item) {
             var Iindex = $(this).attr('index');
@@ -79,6 +81,7 @@ function nav(params) {
     $this.children('ul').delegate('li', 'click', function () {
         var Iindex = $(this).attr('index');
         currentIndex = Iindex;
+        sessionStorage.setItem('navIndex', currentIndex);
         clickNav();
     })
 }

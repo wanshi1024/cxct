@@ -8,7 +8,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./lib/jquery-3.3.1.js"></script>
+
 </head>
 
 <body>
@@ -20,13 +20,12 @@
         <nav id="nav"></nav>
 
         <!-- 轮播 -->
-        <div id="carousel" style=" height: 460px;"></div>
+        <div id="carousel" style=" height: 240px;"></div>
         <div id="scroll-img">
             <div>
                 <img src="./img/图片44.JPG" alt="">
                 <img src="./img/图片44.JPG" alt="">
             </div>
-
         </div>
 
         <!-- 为什么选择环艺 -->
@@ -107,127 +106,16 @@
             <p>关于我们:</p>
             <p>
                 北京建筑环艺能源科技有限公司是暖通领域销售、安装、体系化配套于-体的咨询顾问服务商，主营美的全系列中央空调，在公司多年发展中得到了众多客户好评和认可。北京建筑环艺能源科技有限公司业绩斐然;从起初单一的安装、售后维修服务，经过我方的不断努力，现逐步成为暖通领域客户信任的整体咨询顾问，向客户提供高性价比的工程方案及实施建议。20年专于室内环境，零增项的专业服务，不断向客户提供省心，放心的建议，得到了越来越多地区更多客户的信任，选择。
-
             </p>
         </div>
-
         <!-- 行业链接 -->
         <div id="trade-link"></div>
-
+        <!-- 底部 -->
         <div id="footer"></div>
-
-
     </div>
 
 
-    <script src="./js/header1.js"></script>
-    <script src="./js/nav.js"></script>
-    <script src="./js/Carousel.js"></script>
-    <script src="./js/tradeLink.js"></script>
-    <script src="./js/footer.js"></script>
-    <script>
-        $(function () {
-            header({
-                containerId: '#header',
-                logoSrc: './img/logo2.jpg',
-                homeUrl: '#',
-                title1: '20年 专 注 于 室 内 环 境，零 增 项 的 空 调 系 统',
-                title2: '向顾客提供省心，放心，舒心的建筑环境体系化配套服务',
-                tel1: '13810704395',
-                tel2: '010-63256708'
-            })
-            nav({
-                containerId: '#nav',
-                navArr: [
-                    {
-                        text: '首 页',
-                        url: '#'
-                    },
-                    {
-                        text: '热销产品',
-                        url: '#'
-                    },
-                    {
-                        text: '商用中央空调',
-                        url: '#'
-                    },
-                    {
-                        text: '家用中央空调',
-                        url: '#'
-                    },
-                    {
-                        text: '民用场所案例',
-                        url: '#'
-                    },
-                    {
-                        text: '商业场所案例',
-                        url: '#'
-                    }, {
-                        text: '工业场所案例',
-                        url: '#'
-                    },
-                    {
-                        text: '质量保障措施',
-                        url: '#'
-                    },
-                    {
-                        text: '联系我们',
-                        url: '#'
-                    },
-                ]
-            })
-
-            $('#carousel').Carousel({
-                imgArr: [
-                    'https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=77d1cd475d43fbf2da2ca023807fca1e/9825bc315c6034a8ef5250cec5134954082376c9.jpg',
-                    'https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=b5e4c905865494ee982209191df4e0e1/c2cec3fdfc03924590b2a9b58d94a4c27d1e2500.jpg',
-                    'https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=0c78105b888ba61ec0eece2f713597cc/0e2442a7d933c8956c0e8eeadb1373f08202002a.jpg',
-                    'https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=92afee66fd36afc3110c39658318eb85/908fa0ec08fa513db777cf78376d55fbb3fbd9b3.jpg',
-                    'https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=a62e824376d98d1069d40a31113eb807/838ba61ea8d3fd1fc9c7b6853a4e251f94ca5f46.jpg'
-                ],
-                switchSpeed: 5000,
-                switchTime: 800
-            })
-
-
-            tradeLink({
-                containerId: '#trade-link',
-                arr: [
-                    {
-                        text: '行业链接1',
-                        url: '#'
-                    },
-                    {
-                        text: '行业链接2',
-                        url: '#'
-                    },
-                    {
-                        text: '行业链接3',
-                        url: '#'
-                    },
-                    {
-                        text: '行业链接4',
-                        url: '#'
-                    }, {
-                        text: '行业链接5',
-                        url: '#'
-                    },
-                    {
-                        text: '行业链接6',
-                        url: '#'
-                    },
-                    {
-                        text: '联系我们',
-                        url: '#'
-                    },
-                ]
-            })
-            footer({
-                containerId: '#footer',
-            })
-        })
-
-    </script>
+    <script src="./js/common.js"></script>
 </body>
 
 </html>

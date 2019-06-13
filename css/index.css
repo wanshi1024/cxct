@@ -11,7 +11,7 @@
 }
 #scroll-img div {
   width: 200%;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   animation-name: move;

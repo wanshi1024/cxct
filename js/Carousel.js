@@ -54,8 +54,8 @@ $.fn.Carousel = function (params) {
         });
         //左右切换css
         $this.children('.prev,.next').css({
-            width: '4%',
-            height: '10%',
+            width: '50px',
+            height: '60px',
             position: 'absolute',
             top: '40%',
             'z-index': 999,

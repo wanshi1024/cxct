@@ -1,0 +1,186 @@
+main {
+  width: 100%;
+}
+main > .title {
+  color: #505050b0;
+  font-size: 25px;
+  line-height: 200%;
+  text-indent: 1.2em;
+  margin-top: 1em;
+  border-bottom: 2px #999999 solid;
+}
+main .content {
+  padding: 15px 0;
+}
+main .content h2 {
+  color: #2a82e4;
+  font-size: 25px;
+  line-height: 150%;
+  font-weight: normal;
+  text-indent: 5%;
+}
+main .content .basis-params {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+main .content .basis-params > * {
+  width: 50%;
+}
+main .content .basis-params .left p {
+  border-bottom: 4px #00a0de solid;
+}
+main .content .basis-params .left p span {
+  width: 138px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  display: inline-block;
+  background-color: #00a0de;
+  color: white;
+  font-size: 25px;
+}
+main .content .basis-params .left .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px;
+}
+main .content .basis-params .left .text ul li {
+  color: #505050;
+  font-size: 20px;
+  line-height: 200%;
+}
+main .content .basis-params .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main .content .basis-params .right img {
+  width: 410px;
+  height: 212px;
+  margin-left: 24%;
+}
+main .content .product-features {
+  padding: 2% 6%;
+}
+main .content .product-features h3 {
+  font-weight: normal;
+  color: #505050;
+  font-size: 25px;
+  line-height: 150%;
+}
+main .content .product-features p.common {
+  margin-top: 10%;
+}
+main .content .product-features p.common img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+main .content .product-features p.common b {
+  font-size: 25px;
+  color: #ff5733;
+  vertical-align: middle;
+}
+main .content .product-features p.common span {
+  color: #505050;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-left: 2em;
+  font-weight: bold;
+}
+main .content .product-features .part-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+main .content .product-features .part-1 .left div {
+  width: 194px;
+  height: 46px;
+  color: #505050;
+  font-size: 14px;
+  margin-top: 5%;
+  margin-left: 68%;
+}
+main .content .product-features .part-1 .left div p {
+  line-height: 23px;
+}
+main .content .product-features .part-1 .right img {
+  width: 435px;
+  height: 250px;
+}
+main .content .product-features .part-2 .img1 {
+  display: flex;
+  justify-content: center;
+}
+main .content .product-features .part-2 .img1 img {
+  width: 862px;
+  height: 608px;
+  margin: 15px auto;
+}
+main .content .product-features .part-2 .img2 {
+  display: flex;
+  justify-content: center;
+}
+main .content .product-features .part-2 .img2 img:first-child {
+  width: 388px;
+  height: 274px;
+}
+main .content .product-features .part-2 .img2 img:last-child {
+  width: 462px;
+  height: 245px;
+}
+main .content .product-features .part-3 .p2 {
+  color: #505050;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px 5%;
+}
+main .content .product-features .part-3 .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main .content .product-features .part-3 .img img {
+  width: 779px;
+  height: 457px;
+}
+main .content .product-features .part-4 .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main .content .product-features .part-4 .img img {
+  width: 845px;
+  height: 681px;
+}
+main .content .product-features .part-5 .p2 {
+  color: #505050;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px 5%;
+}
+main .content .product-features .part-5 .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main .content .product-features .part-5 .img img {
+  width: 862px;
+  height: 745px;
+}
+main .content .product-features .part-6 .p2 {
+  color: #505050;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px 5%;
+}
+main .content .product-features .part-6 .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main .content .product-features .part-6 .img img {
+  width: 782px;
+  height: 558px;
+}

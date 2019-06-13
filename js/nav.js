@@ -65,7 +65,7 @@ function nav(params) {
         })
     }
     var currentIndex = sessionStorage.getItem('navIndex') | 0;
-console.log(location);
+    // console.log(location);
 
     function clickNav() {
         $this.find('li').each(function (index, item) {

@@ -84,4 +84,24 @@ function nav(params) {
         sessionStorage.setItem('navIndex', currentIndex);
         clickNav();
     })
+    switch (location.href) {
+        case 'https://wanshi1024.github.io/cxct-project/index.html':
+            currentIndex = 0;
+            clickNav();
+            break;
+        case 'https://wanshi1024.github.io/cxct-project/commercial.html':
+            currentIndex = 2;
+            clickNav();
+            break;
+        case 'https://wanshi1024.github.io/cxct-project/household.html':
+            currentIndex = 3;
+            clickNav();
+            break;
+        case 'https://wanshi1024.github.io/cxct-project/civil.html':
+            currentIndex = 4;
+            clickNav();
+            break;
+        default:
+            break;
+    }
 }

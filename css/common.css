@@ -25,3 +25,15 @@ a:hover{
 .container>* {
     margin-bottom: 5px;
 }
+#carousel {
+    height: 240px;
+}
+
+main > .title {
+    color: #505050b0;
+    font-size: 25px;
+    line-height: 200%;
+    /* text-indent: 1.2em; */
+    margin-top: 1em;
+    border-bottom: 2px #999999 solid;
+  }

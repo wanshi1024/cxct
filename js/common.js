@@ -36,7 +36,7 @@ document.writeln("                        url: \'household.html\'");
 document.writeln("                    },");
 document.writeln("                    {");
 document.writeln("                        text: \'民用场所案例\',");
-document.writeln("                        url: \'#\'");
+document.writeln("                        url: \'civil.html\'");
 document.writeln("                    },");
 document.writeln("                    {");
 document.writeln("                        text: \'商业场所案例\',");

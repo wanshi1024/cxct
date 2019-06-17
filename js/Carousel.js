@@ -54,23 +54,26 @@ $.fn.Carousel = function (params) {
         });
         //左右切换css
         $this.children('.prev,.next').css({
-            width: '50px',
-            height: '60px',
+            width: '40px',
+            height: '50px',
             position: 'absolute',
             top: '40%',
             'z-index': 999,
             cursor: 'pointer',
-            background: 'rgba(0, 0, 0, 0.1) url(https://wanshi1024.github.io/ws_lib/icon/left.png) no-repeat center center / 70%',
+            background: 'rgba(0, 0, 0, 1) url(https://wanshi1024.github.io/ws_lib/icon/left.png) no-repeat center center / 70%',
+            opacity: 0.3
         }).hover(function () {
             // over
             $(this).css({
-                'background-color': 'rgba(0, 0, 0, .6)'
+                // 'background-color': 'rgba(0, 0, 0, .6)'
+                opacity: 0.8
             })
 
         }, function () {
             // out
             $(this).css({
-                'background-color': 'rgba(0, 0, 0, .2)'
+                // 'background-color': 'rgba(0, 0, 0, .2)'
+                opacity: 0.3
             })
         }
         );

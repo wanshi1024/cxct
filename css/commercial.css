@@ -11,7 +11,7 @@ main .content .box {
   width: 340px;
   height: 320px;
   border: #e5e5e5 solid 1px;
-  margin: 24px 29px;
+  margin: 24px 26px;
   cursor: pointer;
   display: flex;
   flex-direction: column;

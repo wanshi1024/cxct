@@ -1,18 +1,31 @@
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .tel {
+        margin-right: 2em;
+    }
+    main{
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -25,15 +38,16 @@ a:hover{
 .container>* {
     margin-bottom: 5px;
 }
+
 #carousel {
     height: 260px;
 }
 
-main > .title {
+main>.title {
     color: #505050b0;
     font-size: 25px;
     line-height: 200%;
     /* text-indent: 1.2em; */
     margin-top: 1em;
     border-bottom: 2px #999999 solid;
-  }
+}

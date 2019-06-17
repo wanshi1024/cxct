@@ -85,22 +85,30 @@ function nav(params) {
         clickNav();
     })
     console.log(location.href);
-    
+
     switch (location.href) {
         case 'https://wanshi1024.github.io/cxct/index.html':
             currentIndex = 0;
             clickNav();
             break;
-        case 'https://wanshi1024.github.io/cxct/commercial.html':
+        case 'https://wanshi1024.github.io/cxct/commercialCentral.html.html':
             currentIndex = 2;
             clickNav();
             break;
-        case 'https://wanshi1024.github.io/cxct/household.html':
+        case 'https://wanshi1024.github.io/cxct/householdCentral.html':
             currentIndex = 3;
             clickNav();
             break;
         case 'https://wanshi1024.github.io/cxct/civil.html':
             currentIndex = 4;
+            clickNav();
+            break;
+        case 'https://wanshi1024.github.io/cxct/business.html':
+            currentIndex = 5;
+            clickNav();
+            break;
+        case 'https://wanshi1024.github.io/cxct/industrial.html':
+            currentIndex = 6;
             clickNav();
             break;
         default:

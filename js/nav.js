@@ -84,6 +84,8 @@ function nav(params) {
         sessionStorage.setItem('navIndex', currentIndex);
         clickNav();
     })
+    console.log(location.href);
+    
     switch (location.href) {
         case 'https://wanshi1024.github.io/cxct-project/index.html':
             currentIndex = 0;

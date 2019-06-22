@@ -1,0 +1,74 @@
+main {
+  width: 100%;
+}
+main .content {
+  padding: 15px 0;
+}
+main .content li {
+  padding: 15px 0;
+}
+main .content li .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .content li .title img {
+  width: 40px;
+  height: 40px;
+}
+main .content li .title b {
+  color: #505050;
+  font-size: 20px;
+  margin-left: 1em;
+}
+main .content li .text {
+  color: #505050;
+  font-size: 14px;
+  line-height: 150%;
+  width: 94%;
+  margin-left: 5%;
+  text-indent: 2em;
+}
+main .content li .img {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main .content .part-1 .wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+main .content .part-1 .wrap .text {
+  width: 458px;
+}
+main .content .part-1 .wrap .img {
+  margin-right: 16%;
+}
+main .content .part-1 .wrap .img img {
+  width: 410px;
+  height: 234px;
+}
+main .content .part-2 .text {
+  width: 86%;
+}
+main .content .part-2 .img {
+  width: 86%;
+  margin-left: 5%;
+  justify-content: space-between;
+}
+main .content .part-2 .img img {
+  margin: 15px 0;
+}
+main .content .part-3 .text,
+main .content .part-4 .text,
+main .content .part-5 .text {
+  width: 86%;
+  margin-top: 1%;
+}
+main .content .part-5 .img {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}

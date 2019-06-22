@@ -47,7 +47,7 @@ document.writeln("                        url: \'industrial.html\'");
 document.writeln("                    },");
 document.writeln("                    {");
 document.writeln("                        text: \'质量保障措施\',");
-document.writeln("                        url: \'#\'");
+document.writeln("                        url: \'qualityAssurance.html\'");
 document.writeln("                    },");
 document.writeln("                    {");
 document.writeln("                        text: \'联系我们\',");

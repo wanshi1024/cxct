@@ -111,6 +111,10 @@ function nav(params) {
             currentIndex = 6;
             clickNav();
             break;
+        case 'https://wanshi1024.github.io/cxct/qualityAssurance.html':
+            currentIndex = 7;
+            clickNav();
+            break;
         default:
             break;
     }

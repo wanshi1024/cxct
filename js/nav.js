@@ -47,7 +47,7 @@ function nav(params) {
         color: 'rgba(80, 80, 80, 1)',
         'font-size': '16px',
         'line-height': '16px',
-        padding: '10px 10px',
+        padding: '10px 30px',
     })
 
     // 选中
@@ -86,36 +86,36 @@ function nav(params) {
     })
     console.log(location.href);
 
-    switch (location.href) {
-        case 'https://wanshi1024.github.io/cxct/index.html':
-            currentIndex = 0;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/commercialCentral.html.html':
-            currentIndex = 2;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/householdCentral.html':
-            currentIndex = 3;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/civil.html':
-            currentIndex = 4;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/business.html':
-            currentIndex = 5;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/industrial.html':
-            currentIndex = 6;
-            clickNav();
-            break;
-        case 'https://wanshi1024.github.io/cxct/qualityAssurance.html':
-            currentIndex = 7;
-            clickNav();
-            break;
-        default:
-            break;
-    }
+    // switch (location.href) {
+    //     case 'https://wanshi1024.github.io/cxct/index.html':
+    //         currentIndex = 0;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/commercialCentral.html.html':
+    //         currentIndex = 2;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/householdCentral.html':
+    //         currentIndex = 3;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/civil.html':
+    //         currentIndex = 4;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/business.html':
+    //         currentIndex = 5;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/industrial.html':
+    //         currentIndex = 6;
+    //         clickNav();
+    //         break;
+    //     case 'https://wanshi1024.github.io/cxct/qualityAssurance.html':
+    //         currentIndex = 7;
+    //         clickNav();
+    //         break;
+    //     default:
+    //         break;
+    // }
 }

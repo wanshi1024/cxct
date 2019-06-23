@@ -46,11 +46,10 @@
   font-weight: normal;
 }
 .why-choose .title span {
-  font-size: 20px;
-  width: 173px;
+  font-size: 30px;
+  width: 220px;
   height: 48px;
-  background: #2ff8f8;
-  color: white;
+  color: #b3b3b3;
   align-self: flex-end;
   line-height: 48px;
   text-align: center;
@@ -77,12 +76,12 @@
   height: 48px;
   color: #ffffff;
   font-size: 25px;
-  background-color: #ff5733;
+  background-color: #00a0de;
   line-height: 48px;
   text-align: center;
 }
 .why-choose .box .text .top h2 {
-  border-top: 7px #ff5733 solid;
+  border-top: 7px #00a0de solid;
   width: 456px;
   color: #d43030;
   font-size: 25px;

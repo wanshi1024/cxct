@@ -93,7 +93,7 @@
   width: 456px;
   height: 145px;
   color: #505050;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 200%;
   align-self: flex-end;
   text-indent: 2em;
@@ -105,13 +105,12 @@
 /* 关于我们 */
 .about-our {
   height: 200px;
-  background-color: rgba(230, 230, 230, 0.5);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .about-our p {
-  width: 873px;
+  width: 100%;
   line-height: 2em;
   color: #505050;
   text-align: left;

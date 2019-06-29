@@ -1,0 +1,32 @@
+main {
+  width: 100%;
+}
+main .content {
+  padding: 15px 0;
+}
+main .content li {
+  padding: 15px 0;
+}
+main .content li .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .content li .title img {
+  width: 40px;
+  height: 40px;
+}
+main .content li .title b {
+  color: #505050;
+  font-size: 20px;
+  margin-left: 1em;
+}
+main .content li .text {
+  color: #505050;
+  font-size: 14px;
+  line-height: 150%;
+  width: 94%;
+  margin-left: 5%;
+  text-indent: 2em;
+}

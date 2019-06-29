@@ -85,18 +85,19 @@ $.fn.Carousel = function (params) {
         $this.children('.switch-dot').css({
             position: 'absolute',
             width: '100%',
-            bottom: '2%',
+            bottom: '0%',
             display: 'flex',
             'justify-content': 'center',
         }).children('span').css({
             display: 'inline-block',
             width: '.8em',
             height: '.8em',
-            background: '#ddd',
+            background: '#000',
             margin: '5px',
             'border-radius': '50%',
             cursor: 'pointer',
-            transition: 'all 200ms'
+            transition: 'all 200ms',
+            opacity: '.8'
         })
 
     })();
@@ -107,12 +108,13 @@ $.fn.Carousel = function (params) {
     function setDotActiveColor() {
         $this.find('.switch-dot span').each(function (index, element) {
             $(this).css({
-                background: '#ddd',
+                background: '#fff',
                 transform: 'scale(1)'
             })
         })
         $this.find('.switch-dot span[index=' + currentIndex + ']').css({
-            background: '#1296db',
+            // #1296db
+            background: 'rgb(79, 179, 209)',
             transform: 'scale(1.2)'
         })
     }

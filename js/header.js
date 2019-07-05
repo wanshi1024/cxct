@@ -16,8 +16,8 @@ function header(params) {
             <img src="${params.logoSrc}" alt="">
         </a>
         <div class="title">
-            <p class="title-1">${params.title1}</p>
-            <p class="title-2">${params.title2}</p>
+            <p class="title-1">${params.title1} <i></i></p>
+            <p class="title-2">${params.title2} <i></i></p>
         </div>
         <div class="tel">
             <img src="./img/10_09.gif" alt="">
@@ -36,15 +36,22 @@ function header(params) {
         display: 'flex',
         'justify-content': 'space-between'
     }).find('.title').css({
-        'width': '500px',
+        'width': '600px',
         'font-family': "宋体",
         'font-size': '20px',
         display: 'flex',
         'flex-direction': 'column',
         'justify-content': 'center',
     }).find('p').css({
-        'line-height': '2em'
-    });
+        'line-height': '.8em',
+        'letter-spacing': '.15em',
+        'text-align': 'justify'
+        
+    }).find('i').css({
+        'display':'inline-block',
+        'width':'100%',
+        // 'height':'0'
+    })
     $this.find('.tel').css({
         width: '216px',
         height: '44px',
@@ -57,6 +64,6 @@ function header(params) {
         display: 'flex',
         'flex-direction': 'column',
         'justify-content': 'space-between',
-       ' box-sizing': 'content-box'
+        ' box-sizing': 'content-box'
     })
 }

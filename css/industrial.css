@@ -35,9 +35,15 @@ main .content li .img {
   justify-content: center;
   padding: 10px 0;
 }
+main .content .part-1 .img {
+  justify-content: space-around;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
 main .content .part-1 .img img {
-  width: 638px;
-  height: 439px;
+  margin-top: 10px;
+  width: 240px;
+  height: 180px;
 }
 main .content .part-2 .img {
   width: 86%;

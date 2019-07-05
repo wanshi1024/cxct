@@ -25,7 +25,7 @@ function tradeLink(params) {
     $this.children('ul').css({
         display: 'flex',
         'justify-content': 'center',
-        border:'1px #505050 solid'
+        // border:'1px #505050 solid'
     }).children('li').css({
         width: '88px',
         height: '40px',

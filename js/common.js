@@ -10,7 +10,7 @@ document.writeln("            header({");
 document.writeln("                containerId: \'#header\',");
 document.writeln("                logoSrc: \'./img/logo2.jpg\',");
 document.writeln("                homeUrl: \'#\',");
-document.writeln("                title1: \'20年 专 注 于 室 内 环 境，零 增 项 的 空 调 系 统\',");
+document.writeln("                title1: \'20年专注于室内环境零增项的空调系统\',");
 document.writeln("                title2: \'向顾客提供省心，放心，舒心的建筑环境体系化配套服务\',");
 document.writeln("                tel1: \'13810704395\',");
 document.writeln("                tel2: \'010-63256708\'");

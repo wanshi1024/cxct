@@ -1,0 +1,35 @@
+main .prodoct h2 {
+  color: #2a82e4;
+  font-size: 20px;
+  line-height: 3em;
+  text-align: left;
+}
+main .prodoct img {
+  height: 260px;
+}
+main .prodoct-special {
+  color: #505050;
+  padding-bottom: 10%;
+}
+main .prodoct-special h3 {
+  font-size: 24px;
+  line-height: 4em;
+}
+main .prodoct-special dl dt {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2em;
+}
+main .prodoct-special dl dt img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+main .prodoct-special dl dt b {
+  padding-left: 8px;
+}
+main .prodoct-special dl dd {
+  line-height: 2em;
+  padding-left: 3em;
+}

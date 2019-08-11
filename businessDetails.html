@@ -107,8 +107,7 @@
         }
         onload = function () {
             let id = getQueryString('id')
-            let resp = fetch('http://47.104.110.146:5000/api/Details/Get?productId=' + id)
-                .then(res => {
+            let resp = fetch('http://47.104.110.146:5000/api/Details/Get?productId=' + id).then(res => {
                     return res.json()
                 }).catch(err => {
                     return {}

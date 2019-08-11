@@ -59,8 +59,8 @@
                         }
                     },
                     created() {
-                        let resp = fetch('http://47.104.110.146:5000/api/Product/Get?page=1&size=6')
-                            .then(res => {
+                       
+                    let resp = fetch('http://47.104.110.146:5000/api/Product/Get?page=1&size=6').then(res => {
                                 return res.json()
                             }).catch(err => {
                                 return {}

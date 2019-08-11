@@ -32,44 +32,61 @@
             <!-- 产品特点 -->
             <div class="prodoct-special">
                 <h3>产品特点</h3>
-
                 <dl>
                     <dt>
                         <img src="./img/num_1.svg" alt="">
                         <b>高效节能</b>
                     </dt>
                     <dd>
-                        ●全系列双1级能效以上，取得国家节能认证，进入政府节能采购清单并通过AHR认证。<br>
-                        ●双级压缩，水平对置压缩机，压绪效率高，能效提升10% <br>
-                        ●单轴直驱，机械损失小，传动效率较传统增速结构更高。<br>
-                        ●航天气动技术，采用强后弯型叶片，叶轮效率高于97%。<br>
-                        ●高速变频电机，电机效率高达96.5%，力能指标较普通变频电机高2%以上。<br>
-                        ●专利全降膜式然发器，提升换热效率。<br>
+                        ●全系列达到国家二级能效以上，通过节能认证及AHR认证。
+                        ●高性能压缩机，全工况高效运行，
+                        ●金鋒膜热发器，提升换热效率10%。(传利号: 201220577559.6).冷凝器过冷设计，制冷效率更高。
+                        ●采用宽范围无级调节，保证机组全负荷高效运行。
                     </dd>
                     <dt>
                         <img src="./img/num_2.svg" alt="">
                         <b>稳定可靠</b>
                     </dt>
                     <dd>
-                        ●两级叶轮水平双向水平放置，运行稳定，有效防止叫振。<br>
-                        ●单输百驱，取消增速齿轮，结构紧凑，易损部性降低为传统的30%，延长使用寿命。<br>
-                        ●双级叶轮等比压缩，转速低，可靠性高。<br>
+                        ●电子膨胀阀节流设计，精确控制。
+                        ●压差供油，无需外加油泵，系统简单，推修率低。
+                        ●独立回路系统设计，机组运行安全。
                     </dd>
                     <dt>
-                        <img src="./img/num_2.svg" alt="">
+                        <img src="./img/num_3.svg" alt="">
+                        <b>低噪音运转</b>
+                    </dt>
+                    <dd>
+                        ●压缩机内置排气消声器，从声音原头截止传播。
+                        ●压缩机地脚标配减震垫，减震效果好。
+                        ●冷凝器设置挡气板，保护换热器铜管。
+                    </dd>
+
+                    <dt>
+                        <img src="./img/num_4.svg">
+                        <b>智能控制</b>
+                    </dt>
+                    <dd>
+                        ●段有自动运行控制功能，操作更具人性化。
+                        ●常美的控制運辑，节能安全可靠。
+                    </dd>
+
+                    <dt>
+                        <img src="./img/num_5.svg" alt="">
                         <b>可选配置</b>
                     </dt>
                     <dd>
-                        ●水侧承压1.6MPa. 2.0MPa以上 <br>
-                        ●污垢系数: 冷东水0.0176-0.344m2 ↓k/kW、 冷却水0.044-0.344m2↑kKW. <br>
-                        ●保温选择 (可加厚保温材料).弹簧减震器 <br>
-                        ●通讯协议: MODBUS-ASCI或其他协议 <br>
-                        ●多种功能:高温出水、大温差，变水流盟、水富冷，热泵等 <br>
-
+                        ●水侧承压1.6MPa. 2.0MPa
+                        ●污垢系败:路水0.0176-0.344mt . CRW.冷却水0.044-0.344m2. CIKW.船用水室
+                        ●保温选择 (可加厚保温材单料 )。弹管减扁器
+                        ●启动方式:固态软启动、变频启动
+                        ●通讯协议: Motlus-ASC或其他协议与楼字系统相匹配。
+                        ●多种功能:单冷工况、高湿出水，大温差、变水流量、水器冷，双工况、全热回收等
                     </dd>
+
+
                 </dl>
             </div>
-
         </main>
         <!-- 行业链接 -->
         <div id="trade-link"></div>
@@ -78,6 +95,42 @@
 
     </div>
     <script src="./js/common.js"></script>
+    <script>
+        var html_1 = $('.prodoct-special').html();
+        $('.prodoct-special').html(html_1.replace(/●/g, '<br>● '));
+
+        // 获取地址栏参数 name 参数名
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        onload = function () {
+            let id = getQueryString('id')
+            let resp = fetch('http://47.104.110.146:5000/api/Details/Get?productId=' + id)
+                .then(res => {
+                    return res.json()
+                }).catch(err => {
+                    return {}
+                })
+            resp.then(res => {
+                console.log(res);
+
+                let prodoct = document.querySelector('.prodoct'); //标题 图片的父节点
+                let title = prodoct.querySelector('h2');
+                let img = prodoct.querySelector('img');
+                title.innerHTML = res.detailsTitle;
+                img.src = prodoct.detailsPic;
+
+                let dl = document.querySelector('.prodoct-special dl'); //主内容列表 dl
+                dl.innerHTML = res.detailsContent;
+
+            }).catch(err => {
+                console.log(resp);
+
+            })
+        }
+    </script>
 
 </body>
 

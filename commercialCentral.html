@@ -22,27 +22,22 @@
         <!-- 轮播 -->
         <div id="carousel"></div>
 
-        <main>
+        <main id="app">
             <div class="title">
                 商用中央空调
             </div>
             <div class="content">
-                <a class="box" href="index.html">
-                    <img src="./img/图片 7.jpg" alt="">
-                    <div class="text">R134a满液式水冷螺杆</div>
+                <!-- 数据格式
+                    id: (...)
+                    productName: (...)
+                    productPic: (...)
+                    productType: (...) -->
+                <a class="box" v-for="(item,index) in productList" :key="index" @click="goDetailPage(item.id)">
+                        <!-- ./img/图片 7.jpg -->
+                    <img :src="item.productPic" alt="">
+                    <div class="text" v-text="item.productName">R134a满液式水冷螺杆</div>
                 </a>
-                <a class="box">
-                    <img src="./img/图片 7.jpg" alt="">
-                    <div class="text">R134a满液式水冷螺杆</div>
-                </a>
-                <a class="box">
-                    <img src="./img/图片 7.jpg" alt="">
-                    <div class="text">R134a满液式水冷螺杆</div>
-                </a>
-                <a class="box">
-                    <img src="./img/图片 7.jpg" alt="">
-                    <div class="text">R134a满液式水冷螺杆</div>
-                </a>
+
             </div>
             <link rel="stylesheet" type="text/css" href="https://unpkg.com/iview/dist/styles/iview.css">
             <!-- <link rel="stylesheet" href="./lib/iview.css"> -->
@@ -51,21 +46,45 @@
             <script src="./lib/iview.min.js"></script>
 
             <div id="paging">
-                <Page :total="100" show-total show-elevator @on-change="change" />
+                <Page :total="total" show-total show-elevator @on-change="change" />
             </div>
             <script>
                 new Vue({
-                    el: '#paging',
+                    el: '#app',
                     data() {
                         return {
-                            currentIndex: 1
+                            currentIndex: 1,
+                            total: 0,
+                            productList: []
                         }
+                    },
+                    created() {
+                        let resp = fetch('http://47.104.110.146:5000/api/Product/Get?page=1&size=6')
+                            .then(res => {
+                                return res.json()
+                            }).catch(err => {
+                                return {}
+                            })
+                        resp.then(res => {
+                            console.log(res);
+                            this.total = res.Total;
+                            this.productList = res.ProductList;
+
+                        }).catch(err => {
+                            console.log(resp);
+
+                        })
+
                     },
                     methods: {
                         // 页码改变
                         change(e) {
                             console.log(e);
-
+                        },
+                        // 跳转
+                        goDetailPage(id) {
+                            console.log(id);
+                            location.href = './businessDetails.html?id=' + id;
                         }
                     }
                 })

@@ -1,4 +1,5 @@
 main {
+   
     .prodoct {
         h2 {
             color: rgba(42, 130, 228, 1);
@@ -16,10 +17,11 @@ main {
         padding-bottom: 10%;
         h3{
             font-size: 24px;
-           line-height: 4em; 
+           line-height: 2em; 
         }
         dl{
             dt{
+                margin-top: 1em;
                 font-size: 18px;
                 font-weight: bold;
                 line-height: 2em;
@@ -36,6 +38,9 @@ main {
             dd{
                 line-height: 2em;
                 padding-left: 3em;
+                &>br:first-child{
+                    display: none;
+                }
             }
         }
     }
